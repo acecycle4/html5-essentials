@@ -13,6 +13,8 @@ body {
   width: 100%;
   height : 50px;
   background: #fff;
+  padding-left : 15px;
+  padding-right : 15px;
   /* overflow-x: hidden; */
 }
 .navbar ul {
@@ -55,6 +57,14 @@ body {
   width : 100%;
   background: #fff;
   z-index: 1000;
+  display : flex;
+  justify-content: space-evenly;
+  padding-top : .5rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  height : 50px;
+  padding : .5rem
 }
 .large-viewport {
   background: #fff;
@@ -117,7 +127,7 @@ body {
 .search-section span {
   position : absolute ; 
   top : 65px ; 
-  right : 25px;
+  right :2rem;
 }
 .search-section i {
   color : rgba(0,0,0,0.45)
@@ -159,10 +169,64 @@ body {
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
+  justify-content: flex-start;
 }
 .scrolling-wrapper .car {
   flex: 0 0 auto;
+  flex-basis : 50% ; 
+  background: #00a8ff;
+  margin-right : .5rem;
+  padding : .5rem;
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px 0 #f2f2f2;
+
 }
+.car p{
+  color : #fff;
+}
+.btn-scroll {
+    border : none ; 
+    background : #e76a03 ; 
+    padding : 3px 6px;
+    box-shadow: 2px 2px 2px 0 inherit;
+}
+.product-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background: #fff;
+}
+.product {
+  flex: 0 1 auto;
+  flex-basis : 50% ; 
+  margin-right : .5rem;
+  padding : .5rem;
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px 0 #f2f2f2;
+  padding: 8px 16px ;
+}
+.product-card {
+  box-shadow:  4px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  /* height : 200px; */
+  padding-bottom: 0;
+}
+.product-img {
+  width : 100%;
+  
+  object-fit: cover;
+}
+
+
+
+
+
 /* .scrolling-wrapper {
   &::-webkit-scrollbar {
     display: none;
@@ -171,7 +235,33 @@ body {
 /* #firstbanner {
   padding : 1rem;
 } */
-.brown {
-  background : #e76a03 ;
-  color : #fff;
+.footer-fixed-menu  {
+  position : fixed ; 
+  bottom: 0 ; 
+  left : 0 ; 
+  width : 100%;
+  background: #fff;
+  z-index: 1000;
+  display : flex;
+  justify-content: space-evenly;
+  padding-top : .5rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  height : 50px;
+  padding : .5rem;
+}
+.shop {
+  margin-bottom: 0;
+}
+.shop a {
+  text-decoration : none ; 
+  color : #000;
+  font-size: 1rem;
+}
+#above {
+  background : rgba(0, 0, 0, 0.575);
+}
+#below {
+  background : #000;
 }
