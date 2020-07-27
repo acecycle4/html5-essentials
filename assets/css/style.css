@@ -102,7 +102,6 @@ body {
 } 
 .search-section form {
   width : 100%;
-  overflow:scroll;
 }
 .search-section input , .search-section input:focus {
   width : 100%;
@@ -118,7 +117,7 @@ body {
 .search-section span {
   position : absolute ; 
   top : 65px ; 
-  right : 15px;
+  right : 25px;
 }
 .search-section i {
   color : rgba(0,0,0,0.45)
@@ -164,8 +163,15 @@ body {
 .scrolling-wrapper .car {
   flex: 0 0 auto;
 }
-.scrolling-wrapper {
+/* .scrolling-wrapper {
   &::-webkit-scrollbar {
     display: none;
   }
+} */
+/* #firstbanner {
+  padding : 1rem;
+} */
+.brown {
+  background : #e76a03 ;
+  color : #fff;
 }
